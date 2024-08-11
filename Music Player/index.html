@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player || Sadhana </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+  <h1>Music player</h1>
+  <div class="music-container">
+    <div class="container">
+
+      <div class="top-bar">
+        <i id="favorite-icon" class="material-icons" onclick="toggleFavorite(this)">favorite_border</i>
+        <span>Now Playing</span>
+        <i class="material-icons">add</i>
+      </div>
+      <div class="img-area">
+        <img src="" alt="Album Art">
+      </div>
+      <div class="song-details">
+        <p class="name"></p>
+        <p class="artist"></p>
+      </div>
+  
+      <div class="progress-area">
+  
+        <div class="progress-bar">
+          <audio id="main-audio" src=""></audio>
+        </div>
+        <div class="song-timer">
+          <span class="current-time">0:00</span>
+          <span class="max-duration">0:00</span>
+        </div>
+        <audio id="main-audio" src=""></audio>
+      </div>
+  
+      <div class="controls">
+        <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+        <i id="prev" class="material-icons prev">fast_rewind</i>
+        <div class="play-pause">
+          <i class="material-icons play">play_arrow</i>
+        </div>
+        <i id="next" class="material-icons next">fast_forward</i>
+        <i id="more-music" class="material-icons">queue_music</i>
+      </div>
+  
+      <div class="music-list">
+        <div class="header">
+          <div class="row">
+            <i class="list material-icons">queue_music</i>
+            <span>Music List</span>
+          </div>
+          <i id="close" class="material-icons">close</i>
+        </div>
+        <ul>
+         <li >
+          <div class="row">
+            <span>Lover-Tylor Swift</span>
+            <p>Tylor Swift</p>
+          </div>
+          <span class="auto-dusration">3:41</span>
+         </li>
+  
+         <li>
+          <div class="row">
+            <span>Wednesday-Goo Goo Muck</span>
+            <p>Jim Yosef x Roy</p>
+          </div>
+          <span class="auto-dusration">3:05</span>
+         </li>
+  
+         <li>
+          <div class="row">
+            <span>Judas (slowed)</span>
+            <p>Lady Gaga</p>
+          </div>
+          <span class="auto-dusration">4:48</span>
+         </li>
+  
+         <li>
+          <div class="row">
+            <span>Seven</span>
+            <p>Jeon Junkook</p>
+          </div>
+          <span class="auto-dusration">3:04</span>
+         </li>
+  
+         <li>
+          <div class="row">
+            <span>One Way Ticket-Snowdrop</span>
+            <p>Jisoo</p>
+          </div>
+          <span class="auto-dusration">3:16</span>
+         </li>
+  
+         <li>
+          <div class="row">
+            <span>Living Hell</span>
+            <p>Bellapoarch</p>
+          </div>
+          <span class="auto-dusration">2:48</span>
+         </li>
+         <li>
+          <div class="row">
+            <span>Pink Venom</span>
+            <p>Black Pink</p>
+          </div>
+          <span class="auto-dusration">3:13</span>
+         </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="music-list.js"></script>
+  <script src="script.js"></script>
+  <script src="toggle-favourite.js"></script>
+ 
+</body>
+
+</html>
